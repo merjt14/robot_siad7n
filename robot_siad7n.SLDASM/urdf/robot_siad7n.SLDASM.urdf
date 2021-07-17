@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="robot_siad7n.SLDASM">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.0532705876571574 -0.0767974979156272 -0.000142781208650451"
+        rpy="0 0 0" />
+      <mass
+        value="9.56045935310843" />
+      <inertia
+        ixx="0.0622135700609236"
+        ixy="-0.0105783354821859"
+        ixz="-0.000141321537993399"
+        iyy="0.136512878662147"
+        iyz="-7.32310879539787E-05"
+        izz="0.106984452980825" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_siad7n.SLDASM/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.23921568627451 0.474509803921569 0.133333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_siad7n.SLDASM/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link_1">
+    <inertial>
+      <origin
+        xyz="1.00339689311431E-06 0.189106618590632 -0.0156119228423456"
+        rpy="0 0 0" />
+      <mass
+        value="11.7569497238069" />
+      <inertia
+        ixx="0.183154145362816"
+        ixy="-1.40444592144142E-06"
+        ixz="5.87212003021285E-07"
+        iyy="0.0617033487068192"
+        iyz="0.0136703017101072"
+        izz="0.186679492606411" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_siad7n.SLDASM/meshes/link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.23921568627451 0.474509803921569 0.133333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_siad7n.SLDASM/meshes/link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_1"
+    type="revolute">
+    <origin
+      xyz="0 -0.1265 0"
+      rpy="0 -1.55961247963961 3.14159265358979" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_1" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="10"
+      velocity="100" />
+  </joint>
+  <link
+    name="link_2">
+    <inertial>
+      <origin
+        xyz="1.05015833037764E-05 0.272681758184058 0.0295584106615145"
+        rpy="0 0 0" />
+      <mass
+        value="10.055392529235" />
+      <inertia
+        ixx="0.338020283341965"
+        ixy="-1.29862360447246E-05"
+        ixz="2.90379787297602E-06"
+        iyy="0.0467294326094914"
+        iyz="0.0229500781656004"
+        izz="0.339754126520426" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_siad7n.SLDASM/meshes/link_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_siad7n.SLDASM/meshes/link_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_2"
+    type="revolute">
+    <origin
+      xyz="0 0.298 0"
+      rpy="0 0 -0.132981041403309" />
+    <parent
+      link="link_1" />
+    <child
+      link="link_2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_3">
+    <inertial>
+      <origin
+        xyz="-0.120604561469353 0.178610106906279 0.0405760223491559"
+        rpy="0 0 0" />
+      <mass
+        value="8.43890943742212" />
+      <inertia
+        ixx="0.117451143264787"
+        ixy="-1.1110922731386E-06"
+        ixz="4.99538724013843E-06"
+        iyy="0.0700119155289213"
+        iyz="0.0360892228503589"
+        izz="0.0817537348047177" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_siad7n.SLDASM/meshes/link_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.749019607843137 0.749019607843137 0.749019607843137 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_siad7n.SLDASM/meshes/link_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_3"
+    type="prismatic">
+    <origin
+      xyz="-0.11689 0.47879 0.17473"
+      rpy="-3.1416 -0.021604 3.1416" />
+    <parent
+      link="link_2" />
+    <child
+      link="link_3" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-0.2"
+      upper="0.23"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_4">
+    <inertial>
+      <origin
+        xyz="-7.08329970677823E-07 0.205610197608899 -0.113259627344141"
+        rpy="0 0 0" />
+      <mass
+        value="6.45548611574415" />
+      <inertia
+        ixx="0.110031238118223"
+        ixy="-8.23512302258224E-06"
+        ixz="-1.43802607517366E-06"
+        iyy="0.0163209176358426"
+        iyz="-0.00683093247106248"
+        izz="0.111596161344142" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_siad7n.SLDASM/meshes/link_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_siad7n.SLDASM/meshes/link_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_4"
+    type="revolute">
+    <origin
+      xyz="-0.120614085216854 0.267508091902945 -0.000564211969683343"
+      rpy="0 0 1.66485701129501" />
+    <parent
+      link="link_3" />
+    <child
+      link="link_4" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="1.57"
+      upper="-1.57"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_5">
+    <inertial>
+      <origin
+        xyz="-0.0912836187748228 0.104297482164213 0.043685896320808"
+        rpy="0 0 0" />
+      <mass
+        value="2.87980927253547" />
+      <inertia
+        ixx="0.0218028431685682"
+        ixy="2.53211262281109E-05"
+        ixz="-2.18652264926969E-05"
+        iyy="0.0107070307442494"
+        iyz="0.00640549139124683"
+        izz="0.0181147775585784" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_siad7n.SLDASM/meshes/link_5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.749019607843137 0.749019607843137 0.749019607843137 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_siad7n.SLDASM/meshes/link_5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_5"
+    type="prismatic">
+    <origin
+      xyz="0.12763978537467 0.392714653958612 0"
+      rpy="-0.00652708354145795 -1.57079631189374 0.00634382819781065" />
+    <parent
+      link="link_4" />
+    <child
+      link="link_5" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-0.08"
+      upper="0.17"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_6">
+    <inertial>
+      <origin
+        xyz="9.83105750956836E-06 0.0698495416294473 0.034858271451973"
+        rpy="0 0 0" />
+      <mass
+        value="2.01842041563984" />
+      <inertia
+        ixx="0.00976013897985287"
+        ixy="-1.904515875746E-06"
+        ixz="2.82611022461531E-07"
+        iyy="0.0042999895341376"
+        iyz="0.00215922122800822"
+        izz="0.00977941221827013" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_siad7n.SLDASM/meshes/link_6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.23921568627451 0.474509803921569 0.133333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_siad7n.SLDASM/meshes/link_6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_6"
+    type="revolute">
+    <origin
+      xyz="-0.091413 0.16784 0"
+      rpy="-3.1416 0 3.0511" />
+    <parent
+      link="link_5" />
+    <child
+      link="link_6" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="EF">
+    <inertial>
+      <origin
+        xyz="-0.00019052 0.0033294 -2.4749E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.095976" />
+      <inertia
+        ixx="5.9835E-05"
+        ixy="2.0224E-08"
+        ixz="-5.6821E-07"
+        iyy="0.0001152"
+        iyz="1.7708E-09"
+        izz="5.8484E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_siad7n.SLDASM/meshes/EF.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.23922 0.47451 0.13333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_siad7n.SLDASM/meshes/EF.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_7"
+    type="revolute">
+    <origin
+      xyz="0 0.16749 0.01686"
+      rpy="0 -0.88919 0" />
+    <parent
+      link="link_6" />
+    <child
+      link="EF" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>
